@@ -1,0 +1,377 @@
+html,
+body,
+div {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@700;800&family=Oswald:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+#header {
+  background-image: url(../img/cover.jpg);
+}
+
+#logo {
+  margin: 25px 0px 25px 100px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+#body {
+  display: flex;
+}
+
+#image_container {
+  flex: 80%;
+}
+
+#european {
+  display: flex;
+  flex-wrap: wrap;
+  /*box-shadow: rgba(23, 23, 23, 0.4) 0px 0px 45px inset; */
+}
+
+#european_title_wrapper {
+  flex: 100%;
+  position: relative;
+}
+
+#european_title {
+  text-align: center;
+  margin: 50px 0px;
+  text-transform: uppercase;
+}
+
+#european_title::before {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 4px;
+  background: #edd1a4;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+#european_title::after {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 4px;
+  background: #edd1a4;
+  margin: auto;
+  margin-top: 10px;
+}
+
+#european_title {
+  font-family: "Martian Mono", monospace;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  margin: 50px 0px;
+}
+
+#slide_container {
+  flex: 20%;
+  box-shadow: rgba(23, 23, 23, 0.4) 0px 0px 45px inset;
+}
+
+#slide_container_detail {
+  flex: 20%;
+}
+
+.image_box {
+  flex: 25%;
+  max-width: 25%;
+  position: relative;
+  overflow: hidden;
+}
+
+.image_box img {
+  transition: transform 0.5s ease;
+}
+
+.image_box:hover img {
+  transform: scale(1.3);
+}
+
+.image_box:hover .overlay {
+  opacity: 1 !important;
+}
+
+.image_box:hover .overlay_inner+.overlay {
+  opacity: 1 !important;
+}
+
+
+.image_box1 {
+  flex: 100%;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.image_box1 img {
+  transition: transform 0.5s ease;
+}
+
+.image_box1:hover img {
+  transform: scale(1.3);
+}
+
+.image_box1:hover .overlay {
+  opacity: 1 !important;
+}
+
+.image_box1:hover .overlay_inner+.overlay {
+  opacity: 1 !important;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: scale(1.1)
+}
+
+
+.overlay_inner {
+  position: absolute;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #1c1818;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  /* Initial opacity set to 0 */
+  transition: opacity 0.5s ease;
+  /* Added transition for smoother effect */
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  opacity: 0;
+  /* Initial opacity set to 0 */
+  transition: opacity 0.5s ease;
+  /* Added transition for smoother effect */
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#footer {
+  height: 200px;
+  background-color: #272727;
+}
+#goBackBtn{
+  cursor: pointer;
+}
+.category {
+  width: 100%;
+}
+
+.category_title_wrapper {
+  background-image: url(../img/5@2x.jpg);
+  object-fit: cover;
+}
+
+.category_title_wrapper_1 {
+
+  background-image: url(../img/res.jpg);
+  object-fit: contain;
+
+}
+
+.category_title_wrapper_1 .category_title {
+  text-align: center;
+  font-family: 'Satisfy', cursive !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ff6900;
+}
+
+.category_title_wrapper_2 {
+  margin-top: 30px !important;
+  background-image: url(../img/3.jpg);
+}
+
+.category_title_wrapper_3 {
+  margin-top: 30px !important;
+  background-image: url(../img/8.jpg);
+  object-fit: cover;
+}
+
+.category_title_2 {
+  text-transform: uppercase;
+  padding: 30px;
+  padding-left: 50px;
+  color: #ffffff;
+  font-family: "Martian Mono", monospace;
+  font-family: "Oswald", sans-serif;
+  background: rgba(0, 0, 0, 0.1);
+  font-family: "Martian Mono", monospace;
+  font-family: "Oswald", sans-serif;
+}
+
+.category_title {
+  text-transform: uppercase;
+  padding: 30px;
+  padding-left: 50px;
+  color: #ffffff;
+  font-family: "Martian Mono", monospace;
+  font-family: "Oswald", sans-serif;
+  background: rgba(0, 0, 0, 0.2);
+  font-family: "Martian Mono", monospace;
+  font-family: "Oswald", sans-serif;
+}
+
+.checkbox_container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: solid 1px rgb(90, 84, 84);
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox_container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox_container input:checked~.checkmark {
+  background-color: #de3163;
+  border: none;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox_container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox_container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid rgb(254, 249, 249);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checkbox_wrapper {
+  margin: 30px 0px 30px 40px !important;
+}
+
+#food_details_container {
+  display: flex;
+  margin: 50px !important;
+}
+
+#food_details_img {
+  flex: 35%;
+}
+
+#food_details_img>img {
+  width: 100%;
+  height: auto;
+  border: solid 10px rgba(222, 49, 99, 0.7);
+}
+
+#food_details_contents {
+  flex: 65%;
+  margin: 0px 0px 20px 70px !important;
+}
+
+#food_details_contents>h1 {
+  font-family: "Martian Mono", monospace;
+  font-family: "Oswald", sans-serif;
+  color: #1c1c1c;
+}
+
+.food_details_sub_titles {
+  padding-top: 10px;
+  color: #666699;
+  font-family: "Pattaya", sans-serif;
+}
+
+.ingredients {
+  color: #1c1c1c;
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+}
+
+.ingredients li {
+  padding-top: 5px;
+}
+
+#tags {
+  margin-top: 40px !important;
+}
+
+#tags span {
+  color: white;
+  font-family: "Nunito", sans-serif;
+  background-color: #de3163;
+  font-size: 14px;
+  padding: 5px 9px;
+  margin-right: 5px;
+  border-radius: 9px;
+}
+
+#home {
+  margin-top: 50px !important;
+}
+
+#home>a {
+  color: black;
+  margin-right: 20px;
+  font-size: 21px !important;
+  text-decoration: underline;
+}
